@@ -108,6 +108,3 @@ print('\nTest Results:\n'
       '\nNegative (benign) cases               : ' + str(len(case_benign)) +
       '\nThe probability of being positive     : ' + '{0:.4f}'.format(len(case_malignant)/len(dataDic)) +
       '\n----------------------------------------------')
-
-
-

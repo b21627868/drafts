@@ -1,20 +1,41 @@
-l=[1,2,3,4]
-l1=[53,32,23,1,24,2]
-l2= [12,6,42,6,2,16,3]
-l3 = l2 #deep copy yapar normal copyden farkı eleman ekleyince yada silince diğerinden de silinir eğer copy yaparsan hangi listeden silersen diğer listeyi etkilemez
-print(l3)
-l2.append(1231)
-print(l3)
-print(l2)
-l.extend(l1)
-print(l)
-print(l1)
-l2.append(l1)
-print(l2)
-
-liste = [["Ahmet", "Mehmet", "Ayşe"],
-["Sedat", "Serkan", "Selin"],
-["Zeynep", "Nur", "Eda"]]
-
-print(liste[0][0])
-print(max(l,l2))
+L = [1,4,6,12,12412,353,786,"alex","mehmet"]
+print(L)
+K = [1,1,1,2,3,4,2,1,34,35,2,1,35,12,75,1,3,35,1]
+print(K)
+print("--------------------------------------------")
+print(K.index(35))
+print("--------------------------------------------")
+print(K.index(34,5,11))
+print("--------------------------------------------")
+print(L.pop())
+print("--------------------------------------------")
+print(K.pop(-5))
+print("--------------------------------------------")
+print(K)
+print("--------------------------------------------")
+K.remove(35)
+print(K)
+print("--------------------------------------------")
+print(L)
+print("--------------------------------------------")
+L.insert(2,675)
+print(L)
+print("--------------------------------------------")
+print(K.count(1))  #içindeki değerleri sayar
+print("--------------------------------------------")
+print(K.count(123))
+Y=L.copy()
+print(Y)
+print("--------------------------------------------")
+Y.clear()
+print(Y)
+print("--------------------------------------------")
+K.sort()
+print(K)
+print("--------------------------------------------")
+K.remove(35)   #iLK GÖRDÜĞÜ ELEMANI SİLER
+print(K)
+print("--------------------------------------------")
+del L[2:6:2]  #6. ELEMAN DAHİL DEĞİL
+print(L)
+#print(L.count()) mutlaka argüman almalı

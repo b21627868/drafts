@@ -161,3 +161,5 @@ def findGreatestElement(greatestVal, numberList):       								# recursion that
         return numberList[0]                            								# returns the last element of the list -numberList
     else:
         return max(numberList[0], findGreatestElement(greatestVal, numberList[1:])) 	# compares then returns maximum element. see example below
+
+temp = file.read().splitlines()  #tüm dosyayı okur satırlardan böler

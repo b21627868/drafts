@@ -1,6 +1,6 @@
 import random
 sayi = int(input("Lütfen sayı giriniz:"))
-number = random.randint(1,3)
+number = random.randint(1,10)
 #print(number)
 
 
